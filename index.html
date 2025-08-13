@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DoctorCare - Trusted Medical Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles */
+        .hero-bg-circle {
+            position: absolute;
+            width: 14rem;
+            height: 14rem;
+            background: radial-gradient(circle at center, #5eead4 40%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+            opacity: 0.3;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.6;
+                transform: scale(1.1);
+            }
+        }
+
+        /* Accordion style */
+        .accordion:hover {
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-emerald-50 via-white to-emerald-50 min-h-screen font-sans text-gray-800">
+    <!-- Navbar -->
+    <header class="container mx-auto p-6 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f1c1ef3-f640-4675-b622-af881f3b8e47.png"
+                alt="Green stethoscope icon logo" class="w-10 h-10 rounded-full bg-emerald-400"
+                onerror="this.style.display='none'" />
+            <span class="text-2xl font-bold text-emerald-600 select-none">DoctorCare</span>
+        </div>
+        <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
+            <a href="#home" class="hover:text-emerald-500 transition">Home</a>
+            <a href="#work" class="hover:text-emerald-500 transition">Work</a>
+            <a href="#about" class="hover:text-emerald-500 transition">About</a>
+            <a href="#schedule" class="hover:text-emerald-500 transition">Schedule</a>
+            <a href="#blog" class="hover:text-emerald-500 transition">Blog</a>
+        </nav>
+        <button
+            class="hidden md:inline-block px-5 py-2 rounded-md bg-emerald-600 text-white font-semibold shadow-md hover:bg-emerald-700 transition">
+            Sign In
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="relative container mx-auto px-6 md:px-12 pt-10 md:pt-16 flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-16">
+        <div class="relative z-10 flex-1">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight md:leading-snug text-gray-900 max-w-xl">
+                Take <span class="text-emerald-600">care</span> <br />Of your body <br />and it will take <br />care of
+                you.
+            </h1>
+            <p class="mt-4 text-gray-600 max-w-lg">
+                Talk with a doctor using our highly secured HIPAA Compliant <br class="hidden sm:inline" />
+                end-to-end encrypted video call.
+            </p>
+            <div class="mt-8 flex space-x-4">
+                <button
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition"
+                    aria-label="Get Appointment">
+                    Get Appointment
+                </button>
+                <button
+                    class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold shadow-md transition"
+                    aria-label="Get Ready">
+                    Get Ready
+                </button>
+            </div>
+        </div>
+
+        <div class="relative flex-1 flex justify-center md:justify-end items-center">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/101fd493-66c4-4dc5-919a-0efad4a043f0.png"
+                alt="Two professional doctors, male and female, smiling and wearing white coats with stethoscopes, standing in a clean white background"
+                class="relative rounded-xl shadow-lg max-w-full object-cover" onerror="this.style.display='none'" />
+            <div class="hero-bg-circle -bottom-20 -left-20"></div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section id="about" class="container mx-auto px-6 md:px-12 mt-20">
+        <h2 class="text-center text-3xl font-bold text-gray-900 mb-8">
+            Why you should trust us? <br />
+            <span class="text-lg font-normal text-gray-700">Get know about us</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-6 bg-white rounded-3xl shadow-lg max-w-6xl mx-auto text-center"
+            role="region" aria-labelledby="trust-heading">
+            <article class="p-4">
+                <div class="inline-block mb-4 p-4 bg-emerald-100 rounded-full text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true" focusable="false">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h3l2 3h4a2 2 0 012 2v6a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-lg mb-2">All Specialist</h3>
+                <p class="text-gray-600 text-sm">
+                    Our team includes top specialists in all major medical fields to ensure you get expert care.
+                </p>
+            </article>
+
+            <article class="p-4">
+                <div class="inline-block mb-4 p-4 bg-emerald-100 rounded-full text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true" focusable="false">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 11c0-1.38-1.12-2.5-2.5-2.5S7 9.62 7 11c0 3 5 7 5 7s5-4 5-7c0-1.38-1.12-2.5-2.5-2.5S12 9.62 12 11z" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-lg mb-2">Private & Secure</h3>
+                <p class="text-gray-600 text-sm">
+                    Our video calls are HIPAA compliant and use end-to-end encryption for your privacy.
+                </p>
+            </article>
+
+            <article class="p-4">
+                <div class="inline-block mb-4 p-4 bg-emerald-100 rounded-full text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true" focusable="false">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 7a4 4 0 114 4H3zM17 18a4 4 0 10-4 4h4zM21 15a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-lg mb-2">Million Customers</h3>
+                <p class="text-gray-600 text-sm">
+                    Trusted by over 1,000,000 patients worldwide who rely on our expert medical advice.
+                </p>
+            </article>
+
+            <article class="p-4">
+                <div class="inline-block mb-4 p-4 bg-emerald-100 rounded-full text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true" focusable="false">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11 12h2m-6 8h6a4 4 0 004-4v-5.5a2.5 2.5 0 10-5 0v.5h-2V8.5a2.5 2.5 0 10-5 0v5.5a4 4 0 004 4z" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-lg mb-2">Chatbot Support</h3>
+                <p class="text-gray-600 text-sm">
+                    24/7 AI-powered chatbot to assist you with basic queries and schedule appointments.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="schedule" class="container mx-auto px-6 md:px-12 mt-24 max-w-5xl bg-white rounded-3xl shadow-lg p-8">
+        <h2 class="text-center text-3xl font-bold text-gray-900 mb-6">Make An Appointment</h2>
+        <p class="text-center text-gray-600 mb-8">Schedule Appointment</p>
+        <!-- Appointment toggle -->
+        <div class="flex justify-center mb-8 space-x-6">
+            <button id="dailyBtn" aria-pressed="true"
+                class="px-6 py-2 font-semibold rounded-lg bg-emerald-600 text-white shadow-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                Daily
+            </button>
+            <button id="monthlyBtn" aria-pressed="false"
+                class="px-6 py-2 font-semibold rounded-lg bg-gray-200 text-gray-700 shadow-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                Monthly
+            </button>
+            <button id="allBtn" aria-pressed="false"
+                class="px-6 py-2 font-semibold rounded-lg bg-gray-200 text-gray-700 shadow-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                All
+            </button>
+            <button id="urgentBtn" aria-pressed="false"
+                class="px-6 py-2 font-semibold rounded-lg bg-gray-200 text-gray-700 shadow-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                Urgent
+            </button>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+            <div class="w-full md:w-1/2 bg-emerald-50 rounded-lg p-6 shadow-inner">
+                <h3 class="font-semibold mb-4 text-emerald-600 text-lg">Morning</h3>
+                <ul>
+                    <li class="mb-2">
+                        <span class="font-medium">08:00 - 09:00</span>: Not Available
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-medium">09:00 - 10:00</span>: Available
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-medium">10:00 - 11:00</span>: Available
+                    </li>
+                    <li>
+                        <span class="font-medium">11:00 - 12:00</span>: Not Available
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 bg-emerald-50 rounded-lg p-6 shadow-inner">
+                <h3 class="font-semibold mb-4 text-emerald-600 text-lg">After Noon</h3>
+                <ul>
+                    <li class="mb-2">
+                        <span class="font-medium">12:00 - 01:00</span>: Available
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-medium">01:00 - 02:00</span>: Available
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-medium">02:00 - 03:00</span>: Not Available
+                    </li>
+                    <li>
+                        <span class="font-medium">03:00 - 04:00</span>: Available
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="container mx-auto px-6 md:px-12 mt-24 max-w-5xl">
+        <h2 class="text-center text-3xl font-bold text-gray-900 mb-6">What does telemedicine mean?</h2>
+        <div class="bg-white rounded-3xl shadow-lg p-8">
+            <div class="space-y-4" role="region" aria-live="polite">
+                <details class="accordion border border-gray-200 rounded-lg p-4" tabindex="0">
+                    <summary
+                        class="cursor-pointer font-semibold text-lg focus:outline-none focus-visible:ring focus-visible:ring-emerald-400">
+                        What does telemedicine mean?</summary>
+                    <p class="mt-2 text-gray-600">
+                        Telemedicine refers to the use of technology to provide clinical healthcare remotely using video
+                        calls,
+                        phone calls, and other electronic communication methods.
+                    </p>
+                </details>
+                <details class="accordion border border-gray-200 rounded-lg p-4" tabindex="0">
+                    <summary
+                        class="cursor-pointer font-semibold text-lg focus:outline-none focus-visible:ring focus-visible:ring-emerald-400">
+                        What is telemedicine used for?</summary>
+                    <p class="mt-2 text-gray-600">
+                        Telemedicine is used to consult doctors, monitor patients, provide follow-up visits, and manage
+                        chronic diseases remotely.
+                    </p>
+                </details>
+                <details class="accordion border border-gray-200 rounded-lg p-4" tabindex="0">
+                    <summary
+                        class="cursor-pointer font-semibold text-lg focus:outline-none focus-visible:ring focus-visible:ring-emerald-400">
+                        What equipment do you require for telemedicine?</summary>
+                    <p class="mt-2 text-gray-600">
+                        For telemedicine, you need a smartphone, tablet, or computer with internet access and a webcam
+                        or camera for video calls.
+                    </p>
+                </details>
+                <details class="accordion border border-gray-200 rounded-lg p-4" tabindex="0">
+                    <summary
+                        class="cursor-pointer font-semibold text-lg focus:outline-none focus-visible:ring focus-visible:ring-emerald-400">
+                        What are the pros or advantages of telemedicine?</summary>
+                    <p class="mt-2 text-gray-600">
+                        Key advantages include convenience, time savings, fewer travel needs, and increased access to
+                        specialists regardless of location.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News & Blog Section -->
+    <section id="blog" class="container mx-auto px-6 md:px-12 mt-24 max-w-7xl">
+        <h2 class="text-center text-3xl font-bold text-gray-900 mb-12">Latest News & Blog</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+            <article class="bg-white rounded-2xl shadow-md p-6 flex flex-col">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/74aac54a-b48c-4582-9224-3c72551e7be4.png"
+                    alt="Healthcare worker in hospital treating peripheral nerve injuries related to COVID-19, patient and team in PPE"
+                    class="rounded-xl mb-4 object-cover h-48 w-full" onerror="this.style.display='none'" />
+                <h3 class="text-lg font-semibold mb-2">Peripheral Nerve Injuries COVID-19</h3>
+                <p class="text-gray-600 flex-grow">
+                    Exploring the neurological complications from COVID-19 and rehabilitation principles.
+                </p>
+                <button class="mt-4 self-start bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-md"
+                    aria-label="Read More about Peripheral Nerve Injuries COVID-19">
+                    Read More
+                </button>
+            </article>
+            <article class="bg-white rounded-2xl shadow-md p-6 flex flex-col">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8b0c537f-8110-4466-8b5d-2eccf53e59b5.png"
+                    alt="Medical professional refuting common medical myths about epilepsy with infographics and patients"
+                    class="rounded-xl mb-4 object-cover h-48 w-full" onerror="this.style.display='none'" />
+                <h3 class="text-lg font-semibold mb-2">Medical Myths News Epilepsy</h3>
+                <p class="text-gray-600 flex-grow">Dispelling common misconceptions and raising awareness about
+                    epilepsy.</p>
+                <button class="mt-4 self-start bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-md"
+                    aria-label="Read More about Medical Myths News Epilepsy">
+                    Read More
+                </button>
+            </article>
+            <article class="bg-white rounded-2xl shadow-md p-6 flex flex-col">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a579def-0cc8-482f-86a0-f679c521ad6f.png"
+                    alt="Person exercising outdoors showing techniques and tips on how to feel more energetic and motivated"
+                    class="rounded-xl mb-4 object-cover h-48 w-full" onerror="this.style.display='none'" />
+                <h3 class="text-lg font-semibold mb-2">How to Feel More Energy Stuck</h3>
+                <p class="text-gray-600 flex-grow">
+                    Discover simple and effective ways to increase your energy and improve your overall well-being.
+                </p>
+                <button class="mt-4 self-start bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-md"
+                    aria-label="Read More about How to Feel More Energy Stuck">
+                    Read More
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Patients Feedback Section -->
+    <section id="feedback" class="container mx-auto px-6 md:px-12 mt-24 max-w-5xl">
+        <h2 class="text-center text-3xl font-bold text-gray-900 mb-12">Patients Feedback</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-white rounded-3xl shadow-lg p-8 text-center">
+            <article class="flex flex-col items-center space-y-4 max-w-xs mx-auto">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ddf94c84-81e3-4167-b8eb-d96432b3734b.png"
+                    alt="Portrait of smiling female patient with short brown hair giving testimonial"
+                    class="rounded-full shadow-md object-cover w-20 h-20" onerror="this.style.display='none'" />
+                <p class="text-gray-700 text-sm">"The doctors and staff were incredibly caring and professional. Highly
+                    recommend"</p>
+                <h3 class="font-semibold">Dr Grandmonster</h3>
+            </article>
+            <article class="flex flex-col items-center space-y-4 max-w-xs mx-auto">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/831b46c6-f6e3-487e-9d24-4984e3583da4.png"
+                    alt="Portrait of young male adult patient smiling giving testimonial"
+                    class="rounded-full shadow-md object-cover w-20 h-20" onerror="this.style.display='none'" />
+                <p class="text-gray-700 text-sm">"Booking an appointment was quick and easy, and the virtual
+                    consultation was excellent."</p>
+                <h3 class="font-semibold">Adam Smith</h3>
+            </article>
+            <article class="flex flex-col items-center space-y-4 max-w-xs mx-auto">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/93d1f268-04d6-4606-8cb3-34ce6c6499d3.png"
+                    alt="Portrait of middle aged male patient with glasses giving testimonial"
+                    class="rounded-full shadow-md object-cover w-20 h-20" onerror="this.style.display='none'" />
+                <p class="text-gray-700 text-sm">"The chatbot support helped me with my questions anytime. Truly
+                    convenient!"</p>
+                <h3 class="font-semibold">Daniel Jenkins</h3>
+            </article>
+        </div>
+    </section>
+
+    <!-- Our Patients Story Section -->
+    <section id="story" class="container mx-auto px-6 md:px-12 mt-24 max-w-6xl pb-20">
+        <h2 class="text-center text-3xl font-bold text-gray-900 mb-12">Our Patients Story</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <figure class="flex flex-col items-center space-y-6 p-6 bg-white rounded-3xl shadow-lg">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1df9bfe0-b5d4-427a-9765-67ad3f66a3b8.png"
+                    alt="Portrait of Steven Spilberg wearing a business casual suit, smiling with arms crossed, indoor professional lighting"
+                    class="rounded-full shadow-md object-cover w-40 h-40" onerror="this.style.display='none'" />
+                <blockquote class="text-gray-700 text-center text-sm">
+                    “At DoctorCare, our patients are our number one priority. We take pride in delivering a truly
+                    compassionate and top-tier healthcare experience.”
+                </blockquote>
+                <figcaption class="mt-2 font-semibold text-emerald-700">Steven Spilberg</figcaption>
+            </figure>
+
+            <figure class="flex flex-col items-center space-y-6 p-6 bg-white rounded-3xl shadow-lg">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e7d02c9-2aa5-4395-aa98-0861dfc188b6.png"
+                    alt="Portrait of Rachel Green smiling with a blue scarf outdoors, happy and relaxed atmosphere"
+                    class="rounded-full shadow-md object-cover w-40 h-40" onerror="this.style.display='none'" />
+                <blockquote class="text-gray-700 text-center text-sm">
+                    “The virtual consultations give me access to specialists that I normally couldn't reach. Feeling
+                    very well cared for.”
+                </blockquote>
+                <figcaption class="mt-2 font-semibold text-emerald-700">Rachel Green</figcaption>
+            </figure>
+
+            <figure class="flex flex-col items-center space-y-6 p-6 bg-white rounded-3xl shadow-lg">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f5e5ebd9-6d8b-460b-8ffb-9786cd84398e.png"
+                    alt="Portrait of John Doe smiling, business professional wearing glasses, indoor studio lighting background"
+                    class="rounded-full shadow-md object-cover w-40 h-40" onerror="this.style.display='none'" />
+                <blockquote class="text-gray-700 text-center text-sm">
+                    “Thanks to DoctorCare, scheduling and attending appointments has never been easier or more
+                    convenient.”
+                </blockquote>
+                <figcaption class="mt-2 font-semibold text-emerald-700">John Doe</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer class="bg-emerald-100 mt-20 py-8 text-center text-gray-700 text-sm select-none">
+        © 2024 DoctorCare. All rights reserved.
+    </footer>
+
+    <script>
+        // Appointment toggle buttons logic
+        const dailyBtn = document.getElementById('dailyBtn');
+        const monthlyBtn = document.getElementById('monthlyBtn');
+        const allBtn = document.getElementById('allBtn');
+        const urgentBtn = document.getElementById('urgentBtn');
+
+        const buttons = [dailyBtn, monthlyBtn, allBtn, urgentBtn];
+
+        buttons.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                buttons.forEach((b) => {
+                    b.classList.remove('bg-emerald-600', 'text-white');
+                    b.classList.add('bg-gray-200', 'text-gray-700');
+                    b.setAttribute('aria-pressed', 'false');
+                });
+                btn.classList.add('bg-emerald-600', 'text-white');
+                btn.classList.remove('bg-gray-200', 'text-gray-700');
+                btn.setAttribute('aria-pressed', 'true');
+                // For demo: Could filter appointment slots based on selection here
+            });
+        });
+    </script>
+</body>
+
+</html>
